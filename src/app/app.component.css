@@ -1,0 +1,23 @@
+p {
+  font-family: Lato;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.card {
+  width: 50px;
+  border: 1px solid black;
+  font-size: 30px;
+  padding: 32px 16px;
+  border-radius: 8px;
+}
+
+.card > p {
+  margin: 0;
+}

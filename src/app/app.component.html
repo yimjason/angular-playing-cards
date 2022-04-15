@@ -1,0 +1,13 @@
+<button (click)="createDeck()">create deck</button>
+<button (click)="dropDeck()">drop deck</button>
+<button (click)="shuffle()">shuffle</button>
+<button (click)="toggleDeck()">toggle deck</button>
+<button (click)="draw()">draw</button>
+<ng-container *ngIf="isVisible">
+  <div *ngFor="let card of cards" class="card">
+    <p [ngClass]="card.color" [innerHTML]="card.value"></p>
+  </div>
+</ng-container>
+<div *ngIf="displayCard" class="card">
+  <p [ngClass]="displayCard.color" [innerHTML]="displayCard.value"></p>
+</div>
